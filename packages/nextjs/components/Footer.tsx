@@ -8,6 +8,7 @@ import { getTargetNetwork } from "~~/utils/scaffold-eth";
 
 /**
  * Site footer
+ //Animo bandera! Si se puede!
  */
 export const Footer = () => {
   const nativeCurrencyPrice = useGlobalState(state => state.nativeCurrencyPrice);
@@ -38,30 +39,19 @@ export const Footer = () => {
                 rel="noreferrer"
                 className="underline underline-offset-2"
               >
-                Fork me
+                Privacy Policy
               </a>
             </div>
             <span>·</span>
             <div>
-              Built with <HeartIcon className="inline-block h-4 w-4" /> at 🏰{" "}
+              Built with <HeartIcon className="inline-block h-4 w-4" /> by team{" "}
               <a
-                href="https://buidlguidl.com/"
+                href="https://yallego.com.mx/#/"
                 target="_blank"
                 rel="noreferrer"
                 className="underline underline-offset-2"
               >
-                BuidlGuidl
-              </a>
-            </div>
-            <span>·</span>
-            <div>
-              <a
-                href="https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA"
-                target="_blank"
-                rel="noreferrer"
-                className="underline underline-offset-2"
-              >
-                Support
+                YaLlego
               </a>
             </div>
           </div>

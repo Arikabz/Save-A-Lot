@@ -1,4 +1,4 @@
-//import Link from "next/link";
+import Link from "next/link";
 import type { NextPage } from "next";
 import { FaceSmileIcon, GiftIcon, IdentificationIcon } from "@heroicons/react/24/outline";
 import { Carousel } from "~~/components/Carousel";
@@ -18,6 +18,9 @@ const Home: NextPage = () => {
           </p>
           <p className="text-center text-lg">Here are some of the latest coupons and offers!</p>
         </div>
+        <Link href="/login-signup" className="text-base h-16 btn-wide btn btn-accent">
+          Start Now!
+        </Link>
         <div className="mx-auto container mt-8 px-8 py-8">
           <Carousel />
         </div>
@@ -26,7 +29,7 @@ const Home: NextPage = () => {
           <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
             <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
               <GiftIcon className="h-8 w-8 fill-secondary" />
-              <p>Receive all sorts of goodies from your favorite places! No spam!</p>
+              <p>Receive goodies from your favorite places! No spam!</p>
             </div>
             <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
               <IdentificationIcon className="h-8 w-8 fill-secondary" />

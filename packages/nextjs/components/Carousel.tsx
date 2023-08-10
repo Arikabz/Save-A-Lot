@@ -47,6 +47,8 @@ const card6: ICard = {
   hash: "asdfjewio323425",
 };
 
+//Test cards for carousel ^
+
 const cardArrr: ICardArray = [card2, card3, card4, card5, card6];
 
 const Carousel = () => {
@@ -88,4 +90,4 @@ const Card = ({ title, description, hash, id }: ICard) => {
   );
 };
 
-export { Carousel, cardArrr };
+export { Carousel };
