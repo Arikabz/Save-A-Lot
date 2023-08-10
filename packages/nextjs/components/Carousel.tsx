@@ -64,7 +64,7 @@ const Card = ({ title, description, hash, id }: ICard) => {
   const before: number = id - 1 == 0 ? 5 : id - 1;
   const after: number = id + 1 == 6 ? 1 : id + 1;
   return (
-    <div className="carousel-item relative" id={`slide${id}`}>
+    <div className="carousel-item relative w-full" id={`slide${id}`}>
       <div className="mx-2 card card-compact bg-base-100 shadow-xl ">
         <figure>
           <img
