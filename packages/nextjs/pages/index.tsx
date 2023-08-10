@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { NextPage } from "next";
 import { BugAntIcon, MagnifyingGlassIcon, SparklesIcon } from "@heroicons/react/24/outline";
+import { Carousel } from "~~/components/Carousel";
 import { MetaHeader } from "~~/components/MetaHeader";
 
 const Home: NextPage = () => {
@@ -10,8 +11,7 @@ const Home: NextPage = () => {
       <div className="flex items-center flex-col flex-grow pt-10">
         <div className="px-5">
           <h1 className="text-center mb-8">
-            <span className="block text-2xl mb-2">Save A Lot is here to save the day!</span>
-            <span className="block text-4xl font-bold">Start saving on the blockchain now!</span>
+            <span className="block text-4xl font-bold">Save More Now!</span>
           </h1>
           <p className="text-center text-lg">
             Get started by editing{" "}
@@ -21,6 +21,9 @@ const Home: NextPage = () => {
             Edit your smart contract <code className="italic bg-base-300 text-base font-bold">YourContract.sol</code> in{" "}
             <code className="italic bg-base-300 text-base font-bold">packages/hardhat/contracts</code>
           </p>
+        </div>
+        <div className="mx-auto container mt-16 px-8 py-12">
+          <Carousel />
         </div>
 
         <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">
