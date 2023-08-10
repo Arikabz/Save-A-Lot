@@ -62,10 +62,8 @@ const Carousel = () => {
 };
 
 const Card = ({ title, description, hash, id }: ICard) => {
-  const before: number = id - 1 == 0 ? 5 : id - 1;
-  const after: number = id + 1 == 6 ? 1 : id + 1;
   return (
-    <div className="carousel-item relative w-full" id={`slide${id}`}>
+    <div className="carousel-item relative w-full h-full" id={`slide${id}`}>
       <div className="mx-2 card card-compact bg-base-100 shadow-xl ">
         <figure>
           <Image
@@ -79,18 +77,13 @@ const Card = ({ title, description, hash, id }: ICard) => {
           <h2 className="card-title">{title}</h2>
           <p>{description}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">{hash}</button>
+            <button className="btn btn-primary">
+              <code className="text-base">{hash}</code>
+            </button>
           </div>
         </div>
       </div>
-      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href={`#slide${before}`} className="btn btn-circle">
-          ❮
-        </a>
-        <a href={`#slide${after}`} className="btn btn-circle">
-          ❯
-        </a>
-      </div>
+      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"></div>
     </div>
   );
 };
