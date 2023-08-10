@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 //Declaring the contents of a coupon card.
 interface ICard {
@@ -67,9 +68,11 @@ const Card = ({ title, description, hash, id }: ICard) => {
     <div className="carousel-item relative w-full" id={`slide${id}`}>
       <div className="mx-2 card card-compact bg-base-100 shadow-xl ">
         <figure>
-          <img
+          <Image
             src="https://images.ctfassets.net/3vz37y2qhojh/5ovxftNE5jbkvWUqcnohYk/472f2dbf2ec1eb26b1e9a5b879dca535/Korean_Burgers.jpg?w=750&fit=fill&fm=webp"
             alt="Shoes"
+            height={750}
+            width={750}
           />
         </figure>
         <div className="card-body">
