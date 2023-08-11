@@ -26,8 +26,8 @@ module.exports = {
 
                     "error": "#991b1b",
                     "neutral-content": "#ffffff",
-                    "base-200": "#f4f8ff",
-                    "base-300": "#DAE8FF",
+                    "base-200": "#dbdcdd",
+                    "base-300": "#c2c3c5",
                     "base-content": "#212638",
                     "--rounded-btn": "9999rem",
 
