@@ -4,7 +4,7 @@ import { UserCircleIcon } from "@heroicons/react/24/outline";
 
 const FriendCard = () => {
   return (
-    <div className="mx-4 mt-4 drop-shadow-lg card card-side bg-base-100 shadow-xl">
+    <div className=" border-base-300 border shadow-md shadow-secondary mx-4 mt-4 drop-shadow-lg card card-side bg-base-100 ">
       <div className="avatar">
         <div className="w-32 rounded">
           <UserCircleIcon className="h-32 w-32 yx-auto fill-secondary" />

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const CouponCard = () => {
   return (
-    <div className="mx-4 mt-4 drop-shadow-lg card card-side bg-base-100 shadow-xl">
+    <div className="bg-base-100 border-base-300 border shadow-md shadow-secondary rounded-3xl mx-4 mt-4 drop-shadow-lg card card-side">
       <figure>
         <Image
           src="https://images.ctfassets.net/3vz37y2qhojh/5ovxftNE5jbkvWUqcnohYk/472f2dbf2ec1eb26b1e9a5b879dca535/Korean_Burgers.jpg?w=750&fit=fill&fm=webp"
