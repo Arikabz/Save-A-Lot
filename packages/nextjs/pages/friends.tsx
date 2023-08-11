@@ -3,6 +3,8 @@ import type { NextPage } from "next";
 import FriendCard from "~~/components/FriendCard";
 import { MetaHeader } from "~~/components/MetaHeader";
 
+//
+
 const Friends: NextPage = () => {
   return (
     <>
