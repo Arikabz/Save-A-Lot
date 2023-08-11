@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           </p>
           <p className="text-center text-lg">Here are some of the latest coupons and offers!</p>
         </div>
-        <Link href="/login-signup" className="text-base h-16 btn-wide btn btn-accent">
+        <Link href="/login-signup" className="text-base h-16 btn-wide btn btn-neutral">
           Start Now!
         </Link>
         <div className="mx-auto container mt-8 px-8 py-8">

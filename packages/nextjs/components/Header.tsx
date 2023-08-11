@@ -46,7 +46,7 @@ export const Header = () => {
         </NavLink>
       </li>
       <li>
-        <NavLink href="/example-ui">
+        <NavLink href="/friends">
           <FaceSmileIcon className="h-4 w-4" />
           Friends
         </NavLink>
