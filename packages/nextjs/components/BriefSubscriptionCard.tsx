@@ -10,8 +10,8 @@ const BriefSubscriptionCard = () => {
       </div>
       <div className="card-body basis-1/2">
         <h2 className="card-title">Burger Joint</h2>
-        <div className="card-actions justify-start">
-          <button className="btn btn-primary">3 Coupons</button>
+        <div className=" card-actions justify-start">
+          <button className="mb-4 btn btn-primary">3 Coupons</button>
         </div>
       </div>
     </div>
