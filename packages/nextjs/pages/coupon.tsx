@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           <FullCouponCard />
         </div>
         <div className="my-4 container h-[90vh] basis-2/5 overflow-y-scroll mx-4 ">
-          <h2 className=" mx-4 font-bold text-4xl py-4 px-4">Other Coupons</h2>
+          <h2 className=" mx-4 font-bold text-4xl py-4 px-4">More by {"McArthys"}</h2>
           <SmallCouponCard />
           <SmallCouponCard />
           <SmallCouponCard />
