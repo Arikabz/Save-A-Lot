@@ -1808,7 +1808,7 @@ __metadata:
     "@uniswap/sdk-core": ^4.0.1
     "@uniswap/v2-sdk": ^3.0.1
     autoprefixer: ^10.4.12
-    daisyui: ^2.31.0
+    daisyui: 2.52.0
     eslint: ^8.15.0
     eslint-config-next: ^13.1.6
     eslint-config-prettier: ^8.5.0
@@ -5407,9 +5407,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^2.31.0":
-  version: 2.31.0
-  resolution: "daisyui@npm:2.31.0"
+"daisyui@npm:2.52.0":
+  version: 2.52.0
+  resolution: "daisyui@npm:2.52.0"
   dependencies:
     color: ^4.2
     css-selector-tokenizer: ^0.8.0
@@ -5418,7 +5418,7 @@ __metadata:
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.1.6
-  checksum: ad802f0f03ab0c0cdae745dda567f0415e475f66d933801a974ff5ba369fb9f302693dd14e306956d5b7653763badc738fed8eea201b182ecb13a3142c6b47e7
+  checksum: 7abe2ca9ac05d2942fd92a8ebc0cb28b4564c1452ba08fd47d50a4e3b205708b4f1fad5829e975fe62b5145c86b456a910df1e12a11f1b16dd9c9dc4e9d775c7
   languageName: node
   linkType: hard
 

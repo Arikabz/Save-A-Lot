@@ -14,10 +14,10 @@ type MetaHeaderProps = {
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/` : "/";
 
 export const MetaHeader = ({
-  title = "Scaffold-ETH 2 App",
-  description = "Built with 🏗 Scaffold-ETH 2",
+  title = "Save A Lot",
+  description = "Start saving with web3 coupons and reward cards!",
   image = "thumbnail.jpg",
-  twitterCard = "summary_large_image",
+  twitterCard = "Save A Lot is a platform that utilizes smart contracts to validate coupons, promotions and loyalty points using the blockchain.",
   children,
 }: MetaHeaderProps) => {
   const imageUrl = baseUrl + image;
