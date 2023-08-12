@@ -16,7 +16,7 @@ const Friends: NextPage = () => {
             </Link>
           </div>
         </div>
-        <div className="my-4 container h-[90vh] overflow-y-scroll ">
+        <div className="my-4 w-full  h-[90vh] ">
           <FriendCard />
           <FriendCard />
           <FriendCard />
