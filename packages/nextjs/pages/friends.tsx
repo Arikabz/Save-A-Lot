@@ -10,7 +10,7 @@ const Friends: NextPage = () => {
       <div className="container">
         <div className="w-[100vw] flex flex-row">
           <h2 className="container mx-4 font-bold text-4xl py-4 px-4">Your Friends</h2>
-          <div className="basis-1/2 mt-4 justify-items-end">
+          <div className="mr-8 mt-4 justify-items-end">
             <Link href="addFriend.tsx" className="btn justify-end basis-1/2">
               Add Friend
             </Link>

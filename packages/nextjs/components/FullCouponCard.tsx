@@ -1,19 +1,12 @@
 import React from "react";
-//import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const FullCouponCard = () => {
   return (
-    <div className="card w-full bg-base-100 shadow-xl">
-      <figure>
-        <img
-          src="https://images.ctfassets.net/3vz37y2qhojh/5ovxftNE5jbkvWUqcnohYk/472f2dbf2ec1eb26b1e9a5b879dca535/Korean_Burgers.jpg?w=750&fit=fill&fm=webp"
-          alt="Shoes"
-        />
-      </figure>
+    <div className="card bg-base-100 shadow-xl">
       <div className="card-body">
         <h2 className="card-title text-2xl">Get 20% off on burers!</h2>
-        <h2 className="card-title">McCarthys</h2>
         <p>
           Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem
           pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud
@@ -31,6 +24,13 @@ const FullCouponCard = () => {
             Transfer
           </Link>
         </div>
+      </div>
+      <div className="relative w-[60vw] h-[60vh]">
+        <Image
+          src="https://images.ctfassets.net/3vz37y2qhojh/5ovxftNE5jbkvWUqcnohYk/472f2dbf2ec1eb26b1e9a5b879dca535/Korean_Burgers.jpg?w=750&fit=fill&fm=webp"
+          alt="Shoes"
+          fill
+        />
       </div>
     </div>
   );
