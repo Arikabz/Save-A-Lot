@@ -12,11 +12,11 @@ const Subscriptions: NextPage = () => {
           <h2 className="container mx-4 font-bold text-4xl py-4 px-4">Your Subscriptions</h2>
           <div className="mr-8 mt-4 justify-items-end">
             <Link href="addFriend.tsx" className="btn justify-end basis-1/2">
-              Add Friend
+              Follow New
             </Link>
           </div>
         </div>
-        <div className="my-4 container w-full h-[90vh]  ">
+        <div className="my-4 overflow-scroll w-full h-[80vh]  ">
           <FullBusinessCard />
           <FullBusinessCard />
           <FullBusinessCard />

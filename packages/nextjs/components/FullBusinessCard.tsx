@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import TinyCouponCard from "./TinyCouponCard";
+import TinyPointsCard from "./TinyPointsCard";
 
 const FullBusinessCard = () => {
   return (
@@ -25,7 +26,10 @@ const FullBusinessCard = () => {
           </Link>
         </div>
       </div>
-      <div className="overflow-x-scroll container mr-2 basis-6/8 justify-start flex-row flex">
+      <div className="my-auto justify-start basis-1/8">
+        <TinyPointsCard />
+      </div>
+      <div className="overflow-x-scroll container mr-2 basis-5/8 justify-start flex-row flex">
         <TinyCouponCard />
         <TinyCouponCard />
         <TinyCouponCard />

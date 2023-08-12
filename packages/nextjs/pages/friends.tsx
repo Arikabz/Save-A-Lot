@@ -7,7 +7,7 @@ const Friends: NextPage = () => {
   return (
     <>
       <MetaHeader />
-      <div className="container">
+      <div className="flex-col">
         <div className="w-[100vw] flex flex-row">
           <h2 className="container mx-4 font-bold text-4xl py-4 px-4">Your Friends</h2>
           <div className="mr-8 mt-4 justify-items-end">
@@ -16,7 +16,7 @@ const Friends: NextPage = () => {
             </Link>
           </div>
         </div>
-        <div className="my-4 w-full  h-[90vh] ">
+        <div className="my-4 w-full overflow-scroll h-[80vh] ">
           <FriendCard />
           <FriendCard />
           <FriendCard />

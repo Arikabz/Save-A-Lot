@@ -11,7 +11,7 @@ const TinyCouponCard = () => {
           alt="Coupon"
         />
       </div>
-      <div className="card-body justify-center">
+      <div className="card-body justify-center text-center items-center">
         <h2 className="card-title">20% off!</h2>
         <div className="card-actions justify-center">
           <button className="btn btn-primary">See Coupon</button>
