@@ -10,37 +10,41 @@ const Home: NextPage = () => {
     <>
       <MetaHeader />
       <div className="flex flex-row">
-        <div className="my-4 container h-[90vh] basis-3/5 overflow-y-scroll ">
-          <h2 className=" mx-4 font-bold text-4xl py-4 px-4">Your Coupons</h2>
-          <CouponCard />
-          <CouponCard />
-          <CouponCard />
-          <CouponCard />
-          <CouponCard />
-          <CouponCard />
+        <div className="mx-4 my-4 basis-3/5">
+          <h2 className="mx-4 font-bold text-4xl py-4 px-4">Your Coupons</h2>
+          <div className="my-4 container h-[90vh] overflow-y-scroll ">
+            <CouponCard />
+            <CouponCard />
+            <CouponCard />
+            <CouponCard />
+            <CouponCard />
+            <CouponCard />
+          </div>
         </div>
-        <div className="my-4 container h-[90vh] basis-2/5 overflow-y-scroll mx-auto ">
+        <div className="mx-4 my-4 basis-2/5">
           <h2 className=" mx-4 font-bold text-4xl py-4 px-4">Subscriptions</h2>
-          <BriefSubscriptionCard />
-          <Divider />
-          <BriefSubscriptionCard />
-          <Divider />
-          <BriefSubscriptionCard />
-          <Divider />
-          <BriefSubscriptionCard />
-          <Divider />
-          <BriefSubscriptionCard />
-          <Divider />
-          <BriefSubscriptionCard />
-          <Divider />
-          <BriefSubscriptionCard />
-          <Divider />
-          <BriefSubscriptionCard />
-          <Divider />
-          <BriefSubscriptionCard />
-          <Divider />
-          <BriefSubscriptionCard />
-          <Divider />
+          <div className="my-4 container h-[90vh] overflow-y-scroll mx-auto ">
+            <BriefSubscriptionCard />
+            <Divider />
+            <BriefSubscriptionCard />
+            <Divider />
+            <BriefSubscriptionCard />
+            <Divider />
+            <BriefSubscriptionCard />
+            <Divider />
+            <BriefSubscriptionCard />
+            <Divider />
+            <BriefSubscriptionCard />
+            <Divider />
+            <BriefSubscriptionCard />
+            <Divider />
+            <BriefSubscriptionCard />
+            <Divider />
+            <BriefSubscriptionCard />
+            <Divider />
+            <BriefSubscriptionCard />
+            <Divider />
+          </div>
         </div>
       </div>
     </>

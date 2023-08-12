@@ -25,12 +25,14 @@ const FullCouponCard = () => {
           </Link>
         </div>
       </div>
-      <div className="relative w-[60vw] h-[60vh]">
-        <Image
-          src="https://images.ctfassets.net/3vz37y2qhojh/5ovxftNE5jbkvWUqcnohYk/472f2dbf2ec1eb26b1e9a5b879dca535/Korean_Burgers.jpg?w=750&fit=fill&fm=webp"
-          alt="Shoes"
-          fill
-        />
+      <div className="avatar">
+        <div className="mx-auto rounded-xl relative w-[60vw] h-[60vh]">
+          <Image
+            src="https://images.ctfassets.net/3vz37y2qhojh/5ovxftNE5jbkvWUqcnohYk/472f2dbf2ec1eb26b1e9a5b879dca535/Korean_Burgers.jpg?w=750&fit=fill&fm=webp"
+            alt="Shoes"
+            fill
+          />
+        </div>
       </div>
     </div>
   );

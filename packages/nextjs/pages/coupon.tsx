@@ -11,12 +11,14 @@ const Home: NextPage = () => {
     <>
       <MetaHeader />
       <div className="flex flex-row">
-        <div className="my-4 container h-[90vh] basis-3/5 overflow-y-scroll mx-4">
+        <div className="basis-3/5 my-4 mx-4">
           <button className="mx-4 btn btn-outline" onClick={() => router.back()}>
             <ArrowLeftIcon className="h-8 w-8 fill-secondary" />
           </button>
-          <h2 className=" mx-4 font-bold text-4xl py-4 px-4">McArthys</h2>
-          <FullCouponCard />
+          <h2 className=" mx-4 font-bold inline text-4xl py-4 px-4">McArthys</h2>
+          <div className="my-4 container h-[90vh]  overflow-y-scroll mx-4">
+            <FullCouponCard />
+          </div>
         </div>
         <div className="my-4 container h-[90vh] basis-2/5 overflow-y-scroll mx-4 ">
           <h2 className=" mx-4 font-bold text-4xl py-4 px-4">More by {"McArthys"}</h2>
