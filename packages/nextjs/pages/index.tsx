@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { NextPage } from "next";
 import { FaceSmileIcon, GiftIcon, IdentificationIcon } from "@heroicons/react/24/outline";
@@ -16,12 +17,15 @@ const Home: NextPage = () => {
           <p className="text-center text-lg">
             Finally! A way for customers and businesses to have decentralized loyalty points and benefits!
           </p>
-          <p className="text-center text-lg">Here are some of the latest coupons and offers!</p>
+          <div className="mx-auto relative h-64 w-64">
+            <Image src={"/logoBig.png"} alt="logo" fill />
+          </div>
         </div>
         <Link href="/login-signup" className="text-base h-16 btn-wide btn btn-neutral">
           Start Now!
         </Link>
         <div className="mx-auto container mt-8 px-8 py-8">
+          <p className="text-center text-lg">Here are some of the latest coupons and offers!</p>
           <Carousel />
         </div>
 

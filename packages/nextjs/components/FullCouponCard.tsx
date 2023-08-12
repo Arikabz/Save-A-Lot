@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const FullCouponCard = () => {
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div className="card bg-base-100 shadow-xl overflow-hidden">
       <div className="card-body">
         <h2 className="card-title text-2xl">Get 20% off on burers!</h2>
         <p>
