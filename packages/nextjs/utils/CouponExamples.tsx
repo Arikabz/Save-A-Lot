@@ -10,7 +10,7 @@ interface CouponType {
 const CouponExamples: Array<CouponType> = [
   {
     id: 1,
-    title: "20% off on Burgers!",
+    title: "Buy one, get one free!",
     issuer: "DrunkenDog",
     hash: "7B33B70D437ADB736D740414ABB6DA97",
     src: "https://res.cloudinary.com/di6tr2xz5/image/upload/v1691893409/coupondog/burger_w7f7ku.webp",
