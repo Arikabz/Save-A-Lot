@@ -12,9 +12,11 @@ const imageStyle = {
 const SmallCouponCard = ({ src, title }: SmCoupon) => {
   return (
     <div className="mx-4 mt-4 drop-shadow-lg card card-side bg-base-100 shadow-xl">
-      <figure className="">
-        <Image src={src} alt="Burguer" style={imageStyle} className="pl-4" height={100} width={200} />
-      </figure>
+      <div className="avatar">
+        <div className="relative w-32 h-32 my-auto ml-2 rounded-2xl">
+          <Image src={src} alt="Burguer" style={imageStyle} className="pl-4" fill />
+        </div>
+      </div>
       <div className="card-body">
         <h2 className="card-title text-2xl">{title}</h2>
         <div className="card-actions justify-start">
