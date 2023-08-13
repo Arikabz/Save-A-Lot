@@ -100,6 +100,7 @@ With **<3** .
 
 ### **Aknowledgements**
 Thanks to Austin Griffith @ Buidl Guidl  
+Thanks to Alan Bryce @ Ethereum Attestation Service
 Thanks to Rory @ ETH Global   
 Thanks to Dan Oved @ Zora  
 Thanks to Ian Dilick @ Worldcoin  
