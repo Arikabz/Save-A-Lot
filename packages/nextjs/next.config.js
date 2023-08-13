@@ -4,11 +4,11 @@
 const nextConfig = {
     images: {
         remotePatterns: [
-            {
+           {
                 protocol: 'https',
-                hostname: 'images.ctfassets.net',
+                hostname: 'res.cloudinary.com',
                 port: '',
-                pathname:'/3vz37y2qhojh/5ovxftNE5jbkvWUqcnohYk/472f2dbf2ec1eb26b1e9a5b879dca535/*',
+                pathname:'/di6tr2xz5/**',
             },
         ],
     },
