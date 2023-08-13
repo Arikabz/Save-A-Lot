@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Subscription {
   id: number;
-  issuer: number;
+  issuer: string;
   couponAmt: number;
   src: string;
 }
@@ -19,7 +20,9 @@ const BriefSubscriptionCard = ({ issuer, couponAmt, src }: Subscription) => {
       <div className="card-body py-4">
         <h2 className="card-title">{issuer}</h2>
         <div className=" card-actions justify-start">
-          <button className="btn btn-sm btn-primary">{couponAmt} coupons</button>
+          <Link href={"/subscriptions"} className="btn btn-sm btn-primary">
+            {couponAmt} coupons
+          </Link>
         </div>
       </div>
     </div>

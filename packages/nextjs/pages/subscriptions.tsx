@@ -2,6 +2,18 @@ import Link from "next/link";
 import type { NextPage } from "next";
 import FullBusinessCard from "~~/components/FullBusinessCard";
 import { MetaHeader } from "~~/components/MetaHeader";
+import { SrtdBsnsCpns } from "~~/utils/CouponExamples";
+
+interface Coupon {
+  id: number;
+  title: string;
+  issuer: string;
+  hash: string;
+  src: string;
+  issuerSrc: string;
+}
+
+type kuponArr = Array<Coupon>;
 
 const Subscriptions: NextPage = () => {
   return (
@@ -17,12 +29,9 @@ const Subscriptions: NextPage = () => {
           </div>
         </div>
         <div className="my-4 overflow-scroll w-full h-[80vh]  ">
-          <FullBusinessCard />
-          <FullBusinessCard />
-          <FullBusinessCard />
-          <FullBusinessCard />
-          <FullBusinessCard />
-          <FullBusinessCard />
+          {SrtdBsnsCpns.map((arr: kuponArr, i: number) => (
+            <FullBusinessCard key={i} arr={arr} />
+          ))}
         </div>
       </div>
     </>
