@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface TinyCoupon {
   title: string;
@@ -17,7 +18,9 @@ const TinyCouponCard = ({ title, src }: TinyCoupon) => {
       <div className="card-body justify-center text-center items-center">
         <h2 className="text-sm card-title">{title}</h2>
         <div className="card-actions justify-center">
-          <button className="btn btn-primary">See Coupon</button>
+          <Link href={"/coupon"} className="btn btn-primary">
+            See Coupon
+          </Link>
         </div>
       </div>
     </div>

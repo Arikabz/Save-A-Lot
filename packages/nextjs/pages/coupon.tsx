@@ -31,7 +31,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="my-4 container h-[90vh] basis-2/5 overflow-y-scroll mx-4 ">
-          <h2 className=" mx-4 font-bold text-4xl py-4 px-4">More by {"McArthys"}</h2>
+          <h2 className=" mx-4 font-bold text-4xl py-4 px-4">More by {"DrunkenDog"}</h2>
           {SrtdBsnsCpns[0].map((coupon: Coupon, i: number) => (
             <SmallCouponCard src={coupon.src} title={coupon.title} key={i} />
           ))}
