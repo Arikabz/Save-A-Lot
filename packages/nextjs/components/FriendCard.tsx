@@ -2,7 +2,12 @@ import React from "react";
 import Link from "next/link";
 import { UserCircleIcon } from "@heroicons/react/24/outline";
 
-const FriendCard = () => {
+interface Friend {
+  name: string;
+  hash: string;
+}
+
+const FriendCard = ({ name, hash }: Friend) => {
   return (
     <div className="w-[95vw] border-base-300 border shadow-md shadow-secondary mx-4 mt-4 drop-shadow-lg card card-side bg-base-100 ">
       <div className="avatar">
@@ -11,9 +16,9 @@ const FriendCard = () => {
         </div>
       </div>
       <div className="card-body">
-        <h2 className="card-title text-2xl">Jannet McCarthy</h2>
+        <h2 className="card-title text-2xl">{name}</h2>
         <div className="card-actions justify-start">
-          <code className="text-base btn-outline btn">wefoi3124j831js10324</code>
+          <code className="text-base btn-outline btn">{hash}</code>
           <Link href="/editFriend" className="btn">
             Edit Friend
           </Link>

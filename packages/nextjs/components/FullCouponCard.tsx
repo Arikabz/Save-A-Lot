@@ -6,7 +6,7 @@ const FullCouponCard = () => {
   return (
     <div className="card bg-base-100 shadow-xl overflow-hidden">
       <div className="card-body">
-        <h2 className="card-title text-2xl">Get 20% off on burers!</h2>
+        <h2 className="card-title text-2xl">Get 20% off on burgers!</h2>
         <p>
           Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem
           pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud
@@ -28,7 +28,7 @@ const FullCouponCard = () => {
       <div className="avatar">
         <div className="mx-auto rounded-xl relative w-[60vw] h-[60vh]">
           <Image
-            src="https://images.ctfassets.net/3vz37y2qhojh/5ovxftNE5jbkvWUqcnohYk/472f2dbf2ec1eb26b1e9a5b879dca535/Korean_Burgers.jpg?w=750&fit=fill&fm=webp"
+            src="https://res.cloudinary.com/di6tr2xz5/image/upload/v1691893409/coupondog/burger_w7f7ku.webp"
             alt="Shoes"
             fill
           />
