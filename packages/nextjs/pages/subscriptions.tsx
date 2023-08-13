@@ -11,6 +11,7 @@ interface Coupon {
   hash: string;
   src: string;
   issuerSrc: string;
+  points: number;
 }
 
 type kuponArr = Array<Coupon>;

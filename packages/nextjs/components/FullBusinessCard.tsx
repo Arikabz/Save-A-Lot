@@ -11,11 +11,13 @@ interface Coupon {
   hash: string;
   src: string;
   issuerSrc: string;
+  points: number;
 }
 
 type CouponArr = Array<Coupon>;
 
 const FullBusinessCard = ({ arr }: { arr: CouponArr }) => {
+  const points: number = arr.reduce((acc, current) => acc + current.points, 0);
   return (
     <div className="w-[95vw] border-base-300 border flex flex-row shadow-md shadow-secondary mx-4 mt-4 drop-shadow-lg card card-side bg-base-100 ">
       <div className="avatar basis-1/8">
@@ -32,7 +34,7 @@ const FullBusinessCard = ({ arr }: { arr: CouponArr }) => {
         </div>
       </div>
       <div className="my-auto justify-start basis-1/8">
-        <TinyPointsCard />
+        <TinyPointsCard points={points} />
       </div>
       <div className="overflow-x-scroll container mr-2 basis-5/8 justify-start flex-row flex">
         {arr.map((coupon: Coupon, i: number) => (
