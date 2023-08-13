@@ -2,6 +2,32 @@ import Link from "next/link";
 import type { NextPage } from "next";
 import FriendCard from "~~/components/FriendCard";
 import { MetaHeader } from "~~/components/MetaHeader";
+import { EAS, Offchain, SchemaEncoder, SchemaRegistry } from "@ethereum-attestation-service/eas-sdk";
+import { ethers } from 'ethers';
+
+export const EASContractAddress = "0xe177d780c94db30d99dc6f29ebf0a2e58b95c8ae3dfbe8629c7bc2b370b23679"; // Sepolia v0.26
+
+// Initialize the sdk with the address of the EAS Schema contract address
+const eas = new EAS(EASContractAddress);
+
+// Gets a default provider (in production use something else like infura/alchemy)
+const provider = ethers.providers.getDefaultProvider(
+  "ethers"
+);
+
+// Connects an ethers style provider/signingProvider to perform read/write functions.
+// MUST be a signer to do write operations!
+eas.connect(provider);
+
+
+///
+
+const uid = "restaurant.eth";
+
+const attestation = await eas.getAttestation(uid);
+
+console.log(attestation);
+//
 
 const Friends: NextPage = () => {
   return (

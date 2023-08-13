@@ -12,6 +12,8 @@ export type ScaffoldConfig = {
 const scaffoldConfig = {
   // The network where your DApp lives in
   targetNetwork: chains.optimismGoerli,
+  //targetNetwork: chains.baseGoerli,
+  //targetNetwork: chains.zoraGoerli,
 
   // The interval at which your front-end polls the RPC servers for new data
   // it has no effect on the local network
@@ -41,3 +43,58 @@ const scaffoldConfig = {
 } satisfies ScaffoldConfig;
 
 export default scaffoldConfig;
+
+/*
+const optimismGoerliConfig: ScaffoldConfig = {
+  targetNetwork: chains.optimismGoerli,
+  pollingInterval: 5000,
+  alchemyApiKey: 'YOUR_ALCHEMY_API_KEY',
+  walletConnectProjectId: 'YOUR_WALLET_CONNECT_PROJECT_ID',
+  onlyLocalBurnerWallet: false,
+  walletAutoConnect: true,
+};
+
+const binanceConfig: ScaffoldConfig = {
+  targetNetwork: chains.BINANCE_SMART_CHAIN,
+  pollingInterval: 5000,
+  alchemyApiKey: 'YOUR_ALCHEMY_API_KEY',
+  walletConnectProjectId: 'YOUR_WALLET_CONNECT_PROJECT_ID',
+  onlyLocalBurnerWallet: false,
+  walletAutoConnect: true,
+};
+
+const polygonConfig: ScaffoldConfig = {
+  targetNetwork: chains.POLYGON,
+  pollingInterval: 5000,
+  alchemyApiKey: 'YOUR_ALCHEMY_API_KEY',
+  walletConnectProjectId: 'YOUR_WALLET_CONNECT_PROJECT_ID',
+  onlyLocalBurnerWallet: false,
+  walletAutoConnect: true,
+};
+
+---
+
+async function deployToChain(config: ScaffoldConfig) {
+  // Assuming you're using ethers or web3, you might set up a provider using config.targetNetwork and config.alchemyApiKey
+  // For example:
+  // const provider = new ethers.providers.JsonRpcProvider(getRpcUrl(config.targetNetwork, config.alchemyApiKey));
+  // const wallet = new ethers.Wallet(YOUR_PRIVATE_KEY, provider);
+
+  // Then deploy your contract or run whatever logic you need using the provided configuration
+
+  // Example:
+  // const contractFactory = new ethers.ContractFactory(YOUR_ABI, YOUR_BYTECODE, wallet);
+  // const deployedContract = await contractFactory.deploy();
+
+  // return deployedContract.address;
+}
+
+-----
+
+deployToChain(ethereumConfig).then(address => {
+  console.log(`Contract deployed to Ethereum at address: ${address}`);
+});
+
+// Similarly, you can call `deployToChain` with `binanceConfig` or `polygonConfig` to deploy to those chains.
+
+*/

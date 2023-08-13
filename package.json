@@ -36,5 +36,16 @@
   },
   "resolutions": {
     "usehooks-ts@^2.7.2": "patch:usehooks-ts@npm:^2.7.2#./.yarn/patches/usehooks-ts-npm-2.7.2-fceffe0e43.patch"
+  },
+  "dependencies": {
+    "@ethereum-attestation-service/eas-sdk": "^1.1.0-beta.1",
+    "@mui/material": "^5.14.4",
+    "@safe-global/auth-kit": "^1.2.0",
+    "@safe-global/safe-react-components": "^2.0.6",
+    "@web3auth/base": "^6.1.7",
+    "@web3auth/modal": "^6.1.7",
+    "@web3auth/openlogin-adapter": "^6.1.7",
+    "@worldcoin/idkit": "^0.5.1",
+    "worldcoin": "^1.0.0"
   }
 }
