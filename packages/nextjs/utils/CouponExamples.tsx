@@ -19,7 +19,7 @@ const CouponExamples: Array<CouponType> = [
     title: "2x1 Beers!",
     issuer: "DrunkenDog",
     hash: "40629A6D201891F3ECAA9F2DB54F0AFB",
-    src: "https://res.cloudinary.com/di6tr2xz5/image/upload/v1691894523/coupondog/beer_loxqve.jpg",
+    src: "https://res.cloudinary.com/di6tr2xz5/image/upload/v1691898661/coupondog/beer2_nrad6i.webp",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const CouponExamples: Array<CouponType> = [
     title: "3x2 on Birria Tacos",
     issuer: "El Manolito",
     hash: "D23EF6109C7A1CFCB6300650639EF7D8",
-    src: "https://res.cloudinary.com/di6tr2xz5/image/upload/v1691892391/coupondog/tacosBirria_fpxt97.jpg",
+    src: "https://res.cloudinary.com/di6tr2xz5/image/upload/v1691898716/coupondog/birria2_voecxe.webp",
   },
   {
     id: 6,
