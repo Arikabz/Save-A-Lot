@@ -24,12 +24,12 @@ const Home: NextPage = () => {
         <Link href="/login-signup" className="text-base h-16 btn-wide btn btn-neutral">
           Start Now!
         </Link>
-        <div className="mx-auto container mt-8 px-8 py-8">
-          <p className="text-center text-lg">Here are some of the latest coupons and offers!</p>
+        <div className="mx-auto container mt-0 px-8 py-8">
+          <p className="text-center text-lg font-bold">Here are some of the latest coupons and offers!</p>
           <Carousel />
         </div>
 
-        <div className="flex-grow bg-base-300 w-full mt-16 px-8 py-12">
+        <div className="flex-grow bg-base-300 w-full mt-8 px-8 py-12">
           <div className="flex justify-center items-center gap-12 flex-col sm:flex-row">
             <div className="flex flex-col bg-base-100 px-10 py-10 text-center items-center max-w-xs rounded-3xl">
               <GiftIcon className="h-8 w-8 fill-secondary" />
